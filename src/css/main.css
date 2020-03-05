@@ -5,6 +5,7 @@
     --dark-blue-main: hsl(218, 28%, 13%);
     --dark-blue-footer: hsl(216, 53%, 9%);
     --dark-blue-testimonials: hsl(219, 30%, 18%);
+    --white-color: 	hsl(0, 0%, 100%);
 }
 * {
 	margin: 0;
@@ -15,12 +16,14 @@
     box-sizing: border-box;
 	vertical-align: baseline;
 }
-body{
+body, main {
     width: 100%;
     display: table;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     line-height: 14px;
+    color: #fff;
+    background: var(--dark-blue-main);
 }
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -44,6 +47,10 @@ ol, ul {
 blockquote, q {
 	quotes: none;
 }
+a {
+    color: inherit !important;
+    text-decoration: none;
+}
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
@@ -53,3 +60,30 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }  
+  @media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+  }  
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+  }  
+  @media (min-width: 992px) {
+    .container {
+      max-width: 960px;
+    }
+  }  
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1140px;
+    }
+  }
