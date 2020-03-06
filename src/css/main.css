@@ -1,32 +1,42 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:400,700&display=swap');
 
 :root {
-    --dark-blue-into: hsl(217, 28%, 15%);
-    --dark-blue-main: hsl(218, 28%, 13%);
-    --dark-blue-footer: hsl(216, 53%, 9%);
-    --dark-blue-testimonials: hsl(219, 30%, 18%);
-    --white-color: 	hsl(0, 0%, 100%);
+	--dark-blue-into: hsl(217, 28%, 15%);
+	--dark-blue-main: hsl(218, 28%, 13%);
+	--dark-blue-footer: hsl(216, 53%, 9%);
+	--dark-blue-testimonials: hsl(219, 30%, 18%);
+	--white-color: hsl(0, 0%, 100%);
 }
 * {
 	margin: 0;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-    font: inherit;
-    box-sizing: border-box;
+	font: inherit;
+	box-sizing: border-box;
 	vertical-align: baseline;
 }
-body, main {
-    width: 100%;
-    display: table;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
-    line-height: 14px;
-    color: #fff;
-    background: var(--dark-blue-main);
+body,
+main {
+	width: 100%;
+	display: table;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	line-height: 14px;
+	color: #fff;
+	background: var(--dark-blue-main);
 }
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
 	display: block;
 }
 body {
@@ -38,21 +48,25 @@ h3,
 h4,
 h5,
 h6 {
-    font-size: inherit;
-    font-weight: 400;
+	font-size: inherit;
+	font-weight: 400;
 }
-ol, ul {
+ol,
+ul {
 	list-style: none;
 }
-blockquote, q {
+blockquote,
+q {
 	quotes: none;
 }
 a {
-    color: inherit !important;
-    text-decoration: none;
+	color: inherit !important;
+	text-decoration: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
 	content: '';
 	content: none;
 }
@@ -61,29 +75,39 @@ table {
 	border-spacing: 0;
 }
 .container {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-  }  
-  @media (min-width: 576px) {
-    .container {
-      max-width: 540px;
-    }
-  }  
-  @media (min-width: 768px) {
-    .container {
-      max-width: 720px;
-    }
-  }  
-  @media (min-width: 992px) {
-    .container {
-      max-width: 960px;
-    }
-  }  
-  @media (min-width: 1200px) {
-    .container {
-      max-width: 1140px;
-    }
-  }
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+@media (min-width: 576px) {
+	.container {
+		max-width: 540px;
+	}
+}
+@media (min-width: 768px) {
+	.container {
+		max-width: 720px;
+	}
+}
+@media (min-width: 992px) {
+	.container {
+		max-width: 960px;
+	}
+}
+@media (min-width: 1200px) {
+	.container {
+		max-width: 1140px;
+	}
+}
+@media (min-width: 1366px) {
+	.container {
+		max-width: 1200px;
+	}
+}
+@media (min-width: 1600px) {
+	.container {
+		max-width: 1300px;
+	}
+}
