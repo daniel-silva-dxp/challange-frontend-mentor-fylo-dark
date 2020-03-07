@@ -78,8 +78,8 @@ table {
 }
 .container {
 	width: 100%;
-	padding-right: 15px;
-	padding-left: 15px;
+	padding-right: 80px;
+	padding-left: 80px;
 	margin-right: auto;
 	margin-left: auto;
 	display: flex;
@@ -137,6 +137,17 @@ table {
 }
 .margin-bottom {
 	margin-bottom: 40px;
+}
+.circle {
+	margin: 5px 0 0 5px;
+	font-size: 11px;
+	line-height: 15px;
+	padding-left: 1px;
+	display: inline-block;
+	border: 1px solid var(--cyan-call-to-action);
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
 }
 /********************
   HEADER 
@@ -204,7 +215,6 @@ table {
 	font-size: 40px;
 	line-height: 60px;
 }
-
 .into > .container p {
 	max-width: 500px;
 	text-align: center;
@@ -218,7 +228,7 @@ table {
 .services {
 	width: 100%;
 	height: auto;
-	padding-bottom: 40px;
+	padding-bottom: 20px;
 }
 .services > .container {
 	justify-content: space-evenly;
@@ -239,11 +249,41 @@ table {
 	margin-bottom: 10px;
 }
 .service-item p {
-	max-width: 300px;
+	font-size: 18px;
 	display: block;
 	margin: 0 auto;
 	line-height: 25px;
 }
+
+/********************
+  PRODUCTIVE
+********************/
+.productive {
+	width: 100%;
+	height: auto;
+	padding-bottom: 40px;
+}
+.productive .container img {
+	margin: 20px 0 40px;
+}
+.container .text h1 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 28px;
+	font-weight: 700;
+	line-height: 28px;
+	margin-bottom: 20px;
+}
+.container .text p {
+	font-size: 28px;
+	line-height: 28px;
+	margin-bottom: 20px;
+}
+.container .text a {
+	padding-bottom: 5px;
+	color: var(--cyan-call-to-action) !important;
+	border-bottom: 1px solid var(--cyan-call-to-action);
+}
+
 /* SCROLLBAR */
 ::-webkit-scrollbar {
 	width: 7px !important;
@@ -283,6 +323,9 @@ table {
 	/********************
   SERVICES
  ********************/
+	.services {
+		height: 100vh;
+	}
 	.services > .container {
 		flex-flow: row wrap;
 		justify-content: space-evenly;
@@ -295,22 +338,41 @@ table {
 	.services .service-item:nth-child(2) {
 		margin-top: -5px;
 	}
-	.service-item img {
-		margin: 40px;
-	}
-	.service-item h4 {
-		font-family: 'Raleway', sans-serif;
-		font-size: 18px;
-		line-height: 18px;
-		font-weight: 700;
-		margin-bottom: 10px;
-	}
-	.service-item p {
-		max-width: 300px;
-		display: block;
-		margin: 0 auto;
-		line-height: 25px;
-	}
+}
+/********************
+  PRODUCTIVE
+********************/
+.productive {
+	height: 100vh;
+	padding-bottom: 0;
+}
+.productive > .container {
+	flex-direction: row;
+	justify-content: space-between;
+}
+.productive .container img,
+.container .text {
+	flex-basis: 40%;
+}
+.text {
+	padding: 20px;
+}
+.text h1 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 16px;
+	margin-bottom: 20px;
+}
+.productive .text p {
+	font-size: 16px;
+	line-height: 28px;
+	margin-bottom: 20px;
+}
+.productive .text a {
+	padding-bottom: 5px;
+	color: var(--cyan-call-to-action) !important;
+	border-bottom: 1px solid var(--cyan-call-to-action);
 }
 
 /*============================================================
