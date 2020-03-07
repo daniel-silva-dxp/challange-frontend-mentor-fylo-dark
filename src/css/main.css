@@ -82,6 +82,11 @@ table {
 	padding-left: 15px;
 	margin-right: auto;
 	margin-left: auto;
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
 }
 @media (min-width: 576px) {
 	.container {
@@ -120,6 +125,7 @@ table {
 	font-size: 12px;
 	font-weight: 700;
 	border-radius: 20px;
+	cursor: pointer;
 }
 .btn-gradient {
 	background: rgb(101, 226, 217);
@@ -141,9 +147,7 @@ table {
 	padding: 30px 0;
 }
 .navbar .container {
-	display: flex;
 	flex-flow: row wrap;
-	align-items: center;
 	justify-content: space-between;
 }
 .nav ul li {
@@ -184,17 +188,10 @@ table {
 .into {
 	position: relative;
 	width: 100%;
-	height: 100vh;
+	height: 124vh;
 	background: var(--dark-blue-into) url('../images/bg-curvy-mobile.svg') no-repeat;
 	background-position: bottom;
 	background-size: 100%;
-}
-.into > .container {
-	display: flex;
-	flex-flow: column wrap;
-	align-items: center;
-	align-content: center;
-	justify-content: center;
 }
 .container .img-into,
 .container .title-into {
@@ -215,6 +212,38 @@ table {
 	line-height: 25px;
 }
 
+/********************
+  SERVICES
+ ********************/
+.services {
+	width: 100%;
+	height: auto;
+	padding-bottom: 40px;
+}
+.services > .container {
+	justify-content: space-evenly;
+}
+.services .service-item {
+	width: 100%;
+	text-align: center;
+	padding: 20px;
+}
+.service-item img {
+	margin: 40px;
+}
+.service-item h4 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 18px;
+	line-height: 18px;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+.service-item p {
+	max-width: 300px;
+	display: block;
+	margin: 0 auto;
+	line-height: 25px;
+}
 /* SCROLLBAR */
 ::-webkit-scrollbar {
 	width: 7px !important;
@@ -251,6 +280,37 @@ table {
 		background-position: bottom;
 		background-size: 100%;
 	}
+	/********************
+  SERVICES
+ ********************/
+	.services > .container {
+		flex-flow: row wrap;
+		justify-content: space-evenly;
+	}
+	.services .service-item {
+		width: 47%;
+		text-align: center;
+		padding: 20px;
+	}
+	.services .service-item:nth-child(2) {
+		margin-top: -5px;
+	}
+	.service-item img {
+		margin: 40px;
+	}
+	.service-item h4 {
+		font-family: 'Raleway', sans-serif;
+		font-size: 18px;
+		line-height: 18px;
+		font-weight: 700;
+		margin-bottom: 10px;
+	}
+	.service-item p {
+		max-width: 300px;
+		display: block;
+		margin: 0 auto;
+		line-height: 25px;
+	}
 }
 
 /*============================================================
@@ -262,6 +322,6 @@ table {
   INTO
  ********************/
 	.into {
-		height: 133vh;
+		height: 124vh;
 	}
 }
