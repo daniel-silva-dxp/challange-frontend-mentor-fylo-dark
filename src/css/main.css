@@ -86,7 +86,6 @@ table {
 	flex-flow: column wrap;
 	align-items: center;
 	align-content: center;
-	justify-content: center;
 }
 @media (min-width: 576px) {
 	.container {
@@ -228,7 +227,7 @@ table {
 .services {
 	width: 100%;
 	height: auto;
-	padding-bottom: 20px;
+	padding-bottom: 40px;
 }
 .services > .container {
 	justify-content: space-evenly;
@@ -282,6 +281,20 @@ table {
 	padding-bottom: 5px;
 	color: var(--cyan-call-to-action) !important;
 	border-bottom: 1px solid var(--cyan-call-to-action);
+}
+
+/********************
+  TESTIMONIALS
+********************/
+.testimonials {
+	width: 100%;
+	height: auto;
+	padding-bottom: 40px;
+}
+.container .wrapper-testimonials {
+	background: var(--dark-blue-testimonials);
+	padding: 40px;
+	height: 320px;
 }
 
 /* SCROLLBAR */
